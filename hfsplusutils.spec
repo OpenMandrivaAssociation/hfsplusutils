@@ -12,7 +12,6 @@ Source0:	hfsplus_%{version}.src.tar.bz2
 Patch0:		hfsplus-1.0.4-debian_jumbo_patch.diff
 Patch1:		hfsplus-1.0.4-automake-fix.patch
 BuildRequires:	automake1.8
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 A portable, free implementation of routines for accessing HFS+ volumes.
