@@ -1,0 +1,11 @@
+--- hfsplus-1.0.4/libhfsp/src/Makefile.am.bak	2002-03-08 22:15:52.000000000 +0100
++++ hfsplus-1.0.4/libhfsp/src/Makefile.am	2004-07-11 15:08:15.751971163 +0200
+@@ -27,7 +27,7 @@
+ 	    blockiter.c btree.c btreecheck.c fscheck.c hfstime.c libhfsp.c os.c unicode.c \
+ 	    record.c volume.c partitions.c 
+ 
+-CFLAGS = -O2 -Wall
++AM_CFLAGS = -O2 -Wall
+ 
+ # I need to clean up these headers first before i can distribute them ...		
+ # include_HEADERS = apple.h hfs.h hfsp.h libhfsp.h 
