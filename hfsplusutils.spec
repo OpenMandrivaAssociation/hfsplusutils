@@ -11,8 +11,8 @@ URL:		http://penguinppc.org/files/users/hasi/
 Source0:	hfsplus_%{version}.src.tar.bz2
 Patch0:		hfsplus-1.0.4-debian_jumbo_patch.diff
 Patch1:		hfsplus-1.0.4-automake-fix.patch
-BuildRequires:	automake1.8
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
+Patch2:		hfsplus-automake-1.13.patch
+BuildRequires:	automake
 
 %description
 A portable, free implementation of routines for accessing HFS+ volumes.
@@ -40,14 +40,13 @@ Currently only reading is supported.
 %prep
 
 %setup -q -n hfsplus-%{version}
-%patch0 -p1
-%patch1 -p1 -b .automake-fix
+%apply_patches
 
 %build
 libtoolize --copy --force
-aclocal-1.8
+aclocal
 autoheader
-automake-1.8 -c -a -f
+automake -c -a -f
 autoconf
 %configure2_5x
 
