@@ -20,8 +20,8 @@ A portable, free implementation of routines for accessing HFS+ volumes.
 Currently only reading is supported.
 
 %package utils
-Group:		File tools
 Summary:	User-space HFS+ utilities
+Group:		File tools
 Provides:	hfsplusutils = %{version}-%{release}
 Obsoletes:	hfsplusutils < 1.0.4-11
 
@@ -50,8 +50,7 @@ A portable, free implementation of routines for accessing HFS+ volumes.
 Currently only reading is supported.
 
 %prep
-
-%setup -qn hfsplus-%{version}
+%setup -q
 %apply_patches
 
 %build
