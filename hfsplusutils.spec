@@ -6,7 +6,7 @@
 Summary:	User-space HFS+ utilities
 Name:		hfsplus
 Version:	1.0.4
-Release:	13
+Release:	14
 License:	GPLv2
 Group:		File tools
 Url:		http://penguinppc.org/files/users/hasi/
