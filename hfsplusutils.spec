@@ -54,13 +54,15 @@ Currently only reading is supported.
 %apply_patches
 
 %build
+export CC=gcc
+export CXX=g++
+
 libtoolize --copy --force
 aclocal
 autoheader
 automake -c -a -f
 autoconf
-%configure2_5x \
-	--disable-static
+%configure
 
 %make CFLAGS="%{optflags}"
 
