@@ -9,7 +9,7 @@ Version:	1.0.4
 Release:	20
 License:	GPLv2
 Group:		File tools
-Url:		http://penguinppc.org/files/users/hasi/
+Url:		https://penguinppc.org/files/users/hasi/
 Source0:	%{name}_%{version}.src.tar.bz2
 Patch0:		hfsplus-1.0.4-debian_jumbo_patch.diff
 Patch1:		hfsplus-1.0.4-automake-fix.patch
