@@ -15,6 +15,11 @@ Patch0:		hfsplus-1.0.4-debian_jumbo_patch.diff
 Patch1:		hfsplus-1.0.4-automake-fix.patch
 Patch2:		hfsplus-automake-1.13.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 A portable, free implementation of routines for accessing HFS+ volumes.
 Currently only reading is supported.
